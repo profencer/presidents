@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Выборы Президента 2018</title>
+    <meta name="google-site-verification" content="rwAqFod_uE1m8iUEQE3m0Pr6UnOZRHB4OO2DU6uGD9s">
+    <meta name="yandex-verification" content="f6552db35f621227">
+    <meta property="og:url" content="http://xn--2018-p4dfboj6cqm6a1j.xn--p1ai">
+    <meta property="og:title" content="Выборы Президента 2018">
+    <meta property="og:description" content="Выборы в России 2018: кандидаты и новости онлайн. ">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://static.tildacdn.com/tild6263-3335-4765-a163-636264633738/_.png">
+    <meta property="fb:app_id" content="257953674358265">
+    <meta name="description" content="Выборы в России 2018: кандидаты и новости онлайн. ">
+    <link rel="canonical" href="http://xn--2018-p4dfboj6cqm6a1j.xn--p1ai/">
+    <link rel="shortcut icon" href="https://static.tildacdn.com/tild3063-6530-4639-b164-663038373433/__________T0S_icon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://static.tildacdn.com/tild3061-3562-4361-a364-333538333838/russiaflag29.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://static.tildacdn.com/tild3061-3562-4361-a364-333538333838/russiaflag29.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://static.tildacdn.com/tild3061-3562-4361-a364-333538333838/russiaflag29.png">
+    <link rel="apple-touch-startup-image" href="https://static.tildacdn.com/tild3061-3562-4361-a364-333538333838/russiaflag29.png">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/landing-page.min.css" rel="stylesheet">
+    <style>
+      *{
+        animation-duration: 0.2s;
+        animation-name: slidein;
+      }
+      .candidate{
+        margin-bottom: 15px;
+      }
+      img.checked{
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 255, 0, 0.67);
+        -moz-box-shadow:    0px 0px 30px 0px rgba(0, 255, 0, 0.67);
+        box-shadow:         0px 0px 30px 0px rgba(0, 255, 0, 0.67);
+      }
+      .btn{
+        cursor:pointer;
+      }
+      .navbar{
+        background:white;
+        color:black;
+      }
+      .navbar.whitebg{
+        background:white;
+        color:black;
+      }
+      .navbar-light .navbar-brand{
+        color:white;
+      }
+      .navbar .navbar-brand{
+        color:black;
+      }
+
+
+      .modal {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        width:100%;
+        height:100%;
+      }
+      .modal-dialog {
+        position: fixed;
+        margin: 0;
+        width: 100% !important;
+        max-width: 9999px !important;
+        height: 100%;
+        padding: 0;
+      }
+      .modal-content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border: 2px solid #3c7dcf;
+        border-radius: 0;
+        box-shadow: none;
+      }
+      .modal-header {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 50px;
+        padding: 10px;
+        background: #6598d9;
+        border: 0;
+      }
+      .modal-title {
+        font-weight: 300;
+        font-size: 2em;
+        color: #fff;
+        line-height: 30px;
+      }
+      .modal-body {
+        position: absolute;
+        top: 50px;
+        bottom: 60px;
+        width: 100%;
+        font-weight: 300;
+        overflow: auto;
+      }
+      .modal-footer {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 60px;
+        padding: 10px;
+        background: #f1f3f5;
+      }
+      
+      ::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 10px;
+        background: #f1f3f5;
+        border-left: 1px solid #d3d9e0;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #b5c0cb;
+      }
+
+      .news{
+        text-align:justify;
+      }
+      .cd{
+        width:100%;
+        font-size:3rem;
+        clear:both;
+        float:left;
+      }
+      .clickable
+      {
+        cursor: pointer;
+        
+       
+      }
+      .mcontents .panel{
+        margin-top:20px;
+        border-bottom:  2px solid darkgray; 
+      }
+      center{
+        display:block;
+      }
+      .clickable:hover .clicker{
+        background: darkgray;
+        cursor: pointer;
+      }
+      .clicker {
+        display:inline-block;
+        width:42px;
+        height:42px;
+        text-align:center;
+        vertical-align: centre;
+        margin:0px;
+        padding:0px;
+        line-height: 1;
+        float:right;
+        font-size:40px;
+        transition: all 200ms ease-in-out;
+        border-radius: 1500px;
+        
+        transform:rotate(0deg);
+      }
+      .clicked .clicker{
+
+        transform:rotate(45deg);
+      }
+      .mcontents .panel-body{
+        display:none;
+      }
+      .line{
+        display:block;
+        width:20%;
+        margin:0 auto;
+
+      }
+      .line hr{
+        border:1px solid black;
+      }
+      img
+{
+	vertical-align: middle;
+}
+.img-responsive
+{
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+.img-rounded
+{
+	border-radius: 3px;
+}
+.img-thumbnail
+{
+	background-color: #fff;
+	border: 1px solid #ededf0;
+	border-radius: 3px;
+	display: inline-block;
+	height: auto;
+	line-height: 1.428571429;
+	max-width: 100%;
+	moz-transition: all .2s ease-in-out;
+	o-transition: all .2s ease-in-out;
+	padding: 2px;
+	transition: all .2s ease-in-out;
+	webkit-transition: all .2s ease-in-out;
+}
+.img-circle
+{
+	border-radius: 50%;
+}
+.timeline-centered {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+    .timeline-centered:before, .timeline-centered:after {
+        content: " ";
+        display: table;
+    }
+
+    .timeline-centered:after {
+        clear: both;
+    }
+
+    .timeline-centered:before, .timeline-centered:after {
+        content: " ";
+        display: table;
+    }
+
+    .timeline-centered:after {
+        clear: both;
+    }
+
+    .timeline-centered:before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 4px;
+        background: #f5f5f6;
+        left: 50%;
+        top: 20px;
+        bottom: 20px;
+        margin-left: -4px;
+    }
+
+    .timeline-centered .timeline-entry {
+        position: relative;
+        width: 50%;
+        float: right;
+        margin-bottom: 70px;
+        clear: both;
+    }
+
+        .timeline-centered .timeline-entry:before, .timeline-centered .timeline-entry:after {
+            content: " ";
+            display: table;
+        }
+
+        .timeline-centered .timeline-entry:after {
+            clear: both;
+        }
+
+        .timeline-centered .timeline-entry:before, .timeline-centered .timeline-entry:after {
+            content: " ";
+            display: table;
+        }
+
+        .timeline-centered .timeline-entry:after {
+            clear: both;
+        }
+
+        .timeline-centered .timeline-entry.begin {
+            margin-bottom: 0;
+        }
+
+        .timeline-centered .timeline-entry.left-aligned {
+            float: left;
+        }
+
+            .timeline-centered .timeline-entry.left-aligned .timeline-entry-inner {
+                margin-left: 0;
+                margin-right: -18px;
+            }
+
+                .timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-time {
+                    left: auto;
+                    right: -100px;
+                    text-align: left;
+                }
+
+                .timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-icon {
+                    float: right;
+                }
+
+                .timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-label {
+                    margin-left: 0;
+                    margin-right: 70px;
+                }
+
+                    .timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-label:after {
+                        left: auto;
+                        right: 0;
+                        margin-left: 0;
+                        margin-right: -9px;
+                        -moz-transform: rotate(180deg);
+                        -o-transform: rotate(180deg);
+                        -webkit-transform: rotate(180deg);
+                        -ms-transform: rotate(180deg);
+                        transform: rotate(180deg);
+                    }
+
+        .timeline-centered .timeline-entry .timeline-entry-inner {
+            position: relative;
+            margin-left: -22px;
+        }
+
+            .timeline-centered .timeline-entry .timeline-entry-inner:before, .timeline-centered .timeline-entry .timeline-entry-inner:after {
+                content: " ";
+                display: table;
+            }
+
+            .timeline-centered .timeline-entry .timeline-entry-inner:after {
+                clear: both;
+            }
+
+            .timeline-centered .timeline-entry .timeline-entry-inner:before, .timeline-centered .timeline-entry .timeline-entry-inner:after {
+                content: " ";
+                display: table;
+            }
+
+            .timeline-centered .timeline-entry .timeline-entry-inner:after {
+                clear: both;
+            }
+
+            .timeline-centered .timeline-entry .timeline-entry-inner .timeline-time {
+                position: absolute;
+                left: -100px;
+                text-align: right;
+                padding: 10px;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+                .timeline-centered .timeline-entry .timeline-entry-inner .timeline-time > span {
+                    display: block;
+                }
+
+                    .timeline-centered .timeline-entry .timeline-entry-inner .timeline-time > span:first-child {
+                        font-size: 15px;
+                        font-weight: bold;
+                    }
+
+                    .timeline-centered .timeline-entry .timeline-entry-inner .timeline-time > span:last-child {
+                        font-size: 12px;
+                    }
+
+            .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon {
+                background: #fff;
+                color: #737881;
+                display: block;
+                width: 40px;
+                height: 40px;
+                -webkit-background-clip: padding-box;
+                -moz-background-clip: padding;
+                background-clip: padding-box;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                border-radius: 20px;
+                text-align: center;
+                -moz-box-shadow: 0 0 0 5px #f5f5f6;
+                -webkit-box-shadow: 0 0 0 5px #f5f5f6;
+                box-shadow: 0 0 0 5px #f5f5f6;
+                line-height: 40px;
+                font-size: 15px;
+                float: left;
+            }
+
+                .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.bg-primary {
+                    background-color: #303641;
+                    color: #fff;
+                }
+
+                .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.bg-secondary {
+                    background-color: #ee4749;
+                    color: #fff;
+                }
+
+                .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.bg-success {
+                    background-color: #00a651;
+                    color: #fff;
+                }
+
+                .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.bg-info {
+                    background-color: #21a9e1;
+                    color: #fff;
+                }
+
+                .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.bg-warning {
+                    background-color: #fad839;
+                    color: #fff;
+                }
+
+                .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.bg-danger {
+                    background-color: #cc2424;
+                    color: #fff;
+                }
+
+            .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
+                position: relative;
+                background: #f5f5f6;
+                padding: 1.7em;
+                margin-left: 70px;
+                -webkit-background-clip: padding-box;
+                -moz-background-clip: padding;
+                background-clip: padding-box;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
+            }
+
+                .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 9px 9px 9px 0;
+                    border-color: transparent #f5f5f6 transparent transparent;
+                    left: 0;
+                    top: 10px;
+                    margin-left: -9px;
+                }
+
+                .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2, .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p {
+                    color: #737881;
+                    font-family: "Noto Sans",sans-serif;
+                    font-size: 12px;
+                    margin: 0;
+                    line-height: 1.428571429;
+                }
+
+                    .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p + p {
+                        margin-top: 15px;
+                    }
+
+                .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 {
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                }
+
+                    .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 a {
+                        color: #303641;
+                    }
+
+                    .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 span {
+                        -webkit-opacity: .6;
+                        -moz-opacity: .6;
+                        opacity: .6;
+                        -ms-filter: alpha(opacity=60);
+                        filter: alpha(opacity=60);
+                    }
+
+    </style>
+  </head>
+
+  <body>
+
+
+
+   
+
+
+
+
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-toggleable-sm navbar-light bg-faded">
+        
+        <a class="navbar-brand" href="/">Выборы 2018</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">КАНДИДАТЫ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/stages.html">ЭТАПЫ ВЫБОРОВ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/rights.html">ПРАВА ИЗБИРАТЕЛЕЙ</a>
+                </li>
+              
+            </ul>
+          </div>
+    </nav>
+
+    <!-- Masthead -->
+    <header class="masthead text-white text-center">
+      <div class="overlay" style="opacity: 0.6"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <h1 class="mb-5">Выборы Президента России состоят из 7 этапов.<br/>
+                Следите за всеми этапами выборов!</h1>
+          </div>
+          <div class="offset-md-1 offset-lg-2 offset-xl-2 col-md-10 col-lg-8 col-xl-7" id="countdown">
+            <div class="row">
+              <div class="col-md-3 col-lg-3 col-sm-3"><span class="cd" id="days"></span><span>дней</span></div>
+              <div class="col-md-3 col-lg-3 col-sm-3" style="border-right: 1px solid white;;border-left: 1px solid white;"><span class="cd" id="hours"></span><span>часов</span></div>
+              <div class="col-md-3 col-lg-3 col-sm-3" style="border-right: 1px solid white;"><span class="cd" id="mins"></span><span>минут</span></div>
+              <div class="col-md-3 col-lg-3 col-sm-3"><span class="cd" id="secs"></span><span>секунд</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    
+    <!-- Icons Grid -->
+    <div class="container" style="margin-top:10px;">
+        <div class="row">
+          <div class="col-md-12" style="text-align:center;padding:15px;">
+            <h1>Этапы выборов Президента России-2018</h1>
+          </div>
+          <div class="timeline-centered">
+          
+        <article class="timeline-entry">
+          
+          <div class="timeline-entry-inner">
+            <time class="timeline-time" datetime="2014-01-10T03:45"><span>1 этап</span> </time>
+            
+            <div class="timeline-icon bg-success">
+              <i class="entypo-feather"></i>
+            </div>
+            
+            <div class="timeline-label">
+              <h2>Назначение выборов</h2>
+              <p>Зачем: определить дату голосования.</p>
+                  <p>  Когда: с 7 по 17 декабря 2017 года.</p>
+            </div>
+          </div>
+          
+        </article>
+        
+        
+        <article class="timeline-entry left-aligned">
+          
+          <div class="timeline-entry-inner">
+            <time class="timeline-time" datetime="2014-01-10T03:45"><span>2 этап</span> </time>
+            <div class="timeline-icon bg-secondary">
+              <i class="entypo-suitcase"></i>
+            </div>
+            
+            <div class="timeline-label">
+              <h2>Организация избирательных округов и избирательных участков</h2>
+              <p>Зачем: выбрать места голосования, назначить ответственных за принятие голосующих граждан.</p>
+              <p>Когда: с января по февраль 2018 года.</p>
+              <p>Совет: узнайте адрес ближайшего участка в ближайшей школе или много-функциональном центре (МФЦ).</p>
+            </div>
+          </div>
+          
+        </article>
+        
+        
+        <article class="timeline-entry">
+          
+          <div class="timeline-entry-inner">
+            <time class="timeline-time" datetime="2014-01-09T13:22"><span>3 этап</span></time>
+            
+            <div class="timeline-icon bg-info">
+              <i class="entypo-location"></i>
+            </div>
+            
+            <div class="timeline-label">
+              <h2>Регистрация кандидатов в Президенты</h2>
+              <p>Зачем: получить полный список кандидатов и проверить их.</p>
+              <p>Требования: возраст более 35 лет, проживание в России последние 10 лет и отсутствие тяжких уголовных преступлений.</p>
+              <p>Когда: с 17 декабря 2017 года по 15 января 2018 года.</p>                  
+            </div>
+          </div>
+          
+        </article>
+        
+        
+        <article class="timeline-entry left-aligned">
+          
+          <div class="timeline-entry-inner">
+            <time class="timeline-time" datetime="2014-01-10T03:45"><span>4 этап</span></time>
+            
+            <div class="timeline-icon bg-warning">
+              <i class="entypo-camera"></i>
+            </div>
+            
+            <div class="timeline-label">
+              <h2>Агитационный период</h2>
+              
+              <p>Зачем: показать полную программу развития (до конца февраля 2018 года), рассказать о себе и программе на телевидении, радио, СМИ, а также в интернете.</p>
+              <p>Когда: с 19 февраля по 17 марта 2018 года</p>  
+            
+            </div>
+          </div>
+          
+        </article>
+        
+        <article class="timeline-entry">
+          
+            <div class="timeline-entry-inner">
+              <time class="timeline-time" datetime="2014-01-09T13:22"><span>5 этап</span></time>
+              
+              <div class="timeline-icon bg-info">
+                <i class="entypo-location"></i>
+              </div>
+              
+              <div class="timeline-label">
+                <h2>Первый тур голосования</h2>
+                <p>Зачем: выбрать ответственного за будущее России.</p>
+                <p>Когда: 18 марта 2018 года с 8.00 до 22.00 по местному времени.</p>                  
+              </div>
+            </div>
+            
+          </article>
+          <article class="timeline-entry left-aligned">
+          
+              <div class="timeline-entry-inner">
+                <time class="timeline-time" datetime="2014-01-10T03:45"><span>6 этап</span></time>
+                
+                <div class="timeline-icon bg-warning">
+                  <i class="entypo-camera"></i>
+                </div>
+                
+                <div class="timeline-label">
+                  <h2>Подсчет голосов</h2>
+                  
+                  <p>Зачем: определить, сколько процентов россиян проголосовали за каждого кандидата.</p>
+                  <p>Когда: до 30 марта 2018 года.</p>  
+                
+                </div>
+              </div>
+              
+            </article>
+        <article class="timeline-entry">
+          
+            <div class="timeline-entry-inner">
+              <time class="timeline-time" datetime="2014-01-10T03:45"><span>7 этап</span> </time>
+              
+              <div class="timeline-icon bg-success">
+                <i class="entypo-feather"></i>
+              </div>
+              
+              <div class="timeline-label">
+                <h2>Результаты выборов Президента России-2018</h2>
+                    <p>  Когда: до 1 апреля 2018 года.</p>
+              </div>
+            </div>
+            
+          </article>
+        
+      </div>
+        </div>
+      </div>
+
+    <!-- Image Showcases 
+    <section class="showcase">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters">
+
+          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-1.jpg');"></div>
+          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h2>Fully Responsive Design</h2>
+            <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/bg-showcase-2.jpg');"></div>
+          <div class="col-lg-6 my-auto showcase-text">
+            <h2>Updated For Bootstrap 4</h2>
+            <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-3.jpg');"></div>
+          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h2>Easy to Use &amp; Customize</h2>
+            <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
+    <!-- Testimonials 
+    <section class="testimonials text-center bg-light">
+      <div class="container">
+        <h2 class="mb-5">What people are saying...</h2>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="">
+              <h5>Margaret E.</h5>
+              <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="">
+              <h5>Fred S.</h5>
+              <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
+              <h5>Sarah	W.</h5>
+              <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
+    <!-- Call to Action -->
+    <section class="call-to-action text-white text-center">
+      <div class="overlay" style="opacity:0.6"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <h2 class="mb-4">Есть, что сказать? Напишите нам!</h2>
+          </div>
+          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+            <form action="https://formspree.io/your@email.com"
+            method="POST">
+              <div class="form-row" style="margin-top:10px;">
+                <div class="col-12 col-md-12 mb-2 mb-md-0">
+                  <input type="email" name="email" class="form-control form-control-lg" placeholder="Ваш адрес электронной почты">
+                </div>
+                <div class="col-12 col-md-12 mb-2 mb-md-0" style="margin-top:10px">
+                    <textarea name="message" class="form-control form-control-lg" id="exampleTextarea" rows="3"></textarea>
+                </div>
+                <div class="col-12 col-md-12" style="margin-top:10px;">
+                  <button type="submit" class="btn btn-block btn-lg btn-primary">Отправить!</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+            <p class="text-muted small mb-4 mb-lg-0">© 2017 Все права защищены</p>
+          </div>
+          <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item mr-3">
+                <a href="https://www.facebook.com/groups/160845644523178/">
+                  <i class="fa fa-facebook fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="https://vk.com/elections2018_russia">
+                  <i class="fa fa-vk fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://ok.ru/group/53526802399382">
+                  <i class="fa fa-odnoklassniki fa-2x fa-fw"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery/jquery.rss.min.js"></script>
+    <script src="vendor/jquery/jquery.countdown.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+     
+    </script>
+    <script>
+      function showComparison(){
+        $.ajax({
+            url : checked[0] + ".html",
+            dataType: "text",
+            success : function (html) {
+                $.ajax({
+                  url : checked[1] + ".html",
+                  dataType: "text",
+                  success : function (html2) {
+                      $(".mcontents").html(
+                      "<div class='col-xs-6 col-md-6 col-sm-6 col-lg-6' style='border-right:1px solid black'>"
+                      +  html +
+                      "</div>" + "<div class='col-xs-6 col-md-6 col-sm-6 col-lg-6' style='border-left:1px solid black'>"
+                       + html2 + "</div>");
+                      $("#fsModal").modal("toggle");
+                  }
+              })
+            }
+        });
+      }
+      var checked = [];
+       $("#countdown").countdown("2018/03/18", function(event) {
+         console.log(event.strftime('%D'))
+          $("#days").text(
+            event.strftime('%D')
+          );
+          $("#hours").text(
+            event.strftime('%H')
+          );
+          $("#mins").text(
+            event.strftime('%m')
+          );
+          $("#secs").text(
+            event.strftime('%S')
+          );
+      });
+      
+      $(window).ready(function(){
+        
+        $(".compare").click(function(e){
+          e.preventDefault();
+          $(this).parent().parent().find("img").toggleClass("checked");
+          if(checked.indexOf($(this).parent().parent().find("img").attr("href")) == -1)
+            checked.push($(this).parent().parent().find("img").attr("href"));
+          else{
+            checked.splice(checked.indexOf($(this).parent().parent().find("img").attr("href")));
+          }
+          if(checked.length > 1){
+            showComparison();
+          }
+        });
+        $("img").click(function(el){
+          $(this).toggleClass("checked");
+          if(checked.indexOf($(this).attr("href")) == -1)
+            checked.push($(this).attr("href"));
+          else{
+            checked.splice(checked.indexOf($(this).attr("href")));
+          }
+          if(checked.length > 1){
+            showComparison();
+          }
+        });
+      });
+      $
+      $(window).scroll(function(el){
+        if($(window).scrollTop()>0) { $(".navbar").addClass("whitebg",{duration:200}); }
+        else { $(".navbar").removeClass("whitebg",{duration:200}); }
+      })
+      $(".candetails").click(function(e){
+        e.preventDefault();
+        alert($(e.target).parent().parent().find("img").attr("href") + ".html");
+        $.ajax({
+            url : $(e.target).parent().parent().find("img").attr("href") + ".html",
+            dataType: "text",
+            success : function (data) {
+                $(".mcontents").html(data);
+            }
+        });
+        $("#fsModal").modal("toggle");
+      })
+    </script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      jQuery(function($) {
+        $(".news").rss("https://news.yandex.ru/politics.rss",{
+          limit:6,
+          layoutTemplate: "{entries}",
+          entryTemplate:  "<div class='col-sm-12 col-lg-12 col-md-12'><a href='{url}'>{title}</a></div><hr/>"
+        })
+      })
+      $(document).on('click', '.panel div.clickable', function (e) {
+        var $this = $(this); //Heading
+        var $panel = $this.parent('.panel');
+        var $panel_body = $panel.children('.panel-body');
+        var $display = $panel_body.css('display');
+        $(this).toggleClass("clicked");
+        if ($display == 'block') {
+            $panel_body.slideUp();
+        } else if($display == 'none') {
+            $panel_body.slideDown();
+        }
+      });
+
+      $(document).ready(function(e){
+          //var $classy = '.panel.autocollapse';
+
+          //var $found = $($classy);
+          //$found.find('.panel-body').hide();
+//$found.removeClass($classy);
+      });
+    </script>
+    <script src="http://www.jsviews.com/download/jsrender.js"></script>
+    <script id="candidate" type="text/x-jsrender">
+      <div class="panel panel-default autocollapse">
+          <div class="panel-heading clickable">
+            <h3 class="panel-title">
+                {^{:name}}
+            </h3>
+          </div>
+          <div class="panel-body">
+            <div class="alert alert-danger" role="alert">{^{:value}}</div>
+          </div>
+        </div>
+      
+      
+    </script>
+    <script>
+    $(window).ready(function(){
+      var tmpl = $.templates("#candidate"); // Get compiled template
+                 // Insert HTML string into DOM
+    });
+      
+    </script>
+  </body>
+
+</html>
